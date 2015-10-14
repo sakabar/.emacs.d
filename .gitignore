@@ -3,3 +3,9 @@
 
 # Packaging
 .cask
+
+#emacs backup
+*~
+auto-install
+elpa
+elisp
