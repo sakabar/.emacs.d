@@ -5,17 +5,19 @@
   (other-window val))
 
 ;;窓の移動
-(global-set-key (kbd "C-.")
+;; ターミナル内では、"C-."や"C-,"は機能しないとのこと。
+;; http://d.hatena.ne.jp/hirose31/20040219/1160403206
+(global-set-key (kbd "C-n")
  (lambda ()
   (interactive)
-(other-window-or-split 1)))
+  (other-window-or-split 1)))
 
-(global-set-key (kbd "C-,")
+(global-set-key (kbd "C-b")
  (lambda ()
   (interactive)
 (other-window-or-split -1)))
 
-(global-set-key (kbd "C-/")
+(global-set-key (kbd "C-q")
  (lambda ()
   (interactive)
   (delete-other-windows)))
