@@ -5,7 +5,7 @@
 (global-set-key "\C-j" 'next-line)
 (global-set-key "\C-l" 'forward-char)
 (global-set-key "\C-u" 'kill-whole-line)
-(global-set-key "\C-t" 'kill-line)
+(global-set-key "\C-b" 'recenter)
 
 
 ;; (makunbound 'overriding-minor-mode-map)
@@ -18,7 +18,6 @@
     (,(kbd "C-j") . next-line)
     (,(kbd "C-k") . previous-line)
     (,(kbd "C-c r"). query-replace)
-    (,(kbd "C-t"). recenter)
 ))
 
 ;clipboard
