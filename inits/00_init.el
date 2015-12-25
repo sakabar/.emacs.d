@@ -155,3 +155,6 @@
   (lambda()
     (find-file "~/Dropbox/Plaintext/README.txt")))
 
+
+;; emacsを終了するときに確認する
+(setq confirm-kill-emacs 'y-or-n-p)

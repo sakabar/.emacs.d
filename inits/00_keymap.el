@@ -4,9 +4,8 @@
 (global-set-key "\C-k" 'previous-line)
 (global-set-key "\C-j" 'next-line)
 (global-set-key "\C-l" 'forward-char)
-(global-set-key "\C-b" 'recenter)
 (global-set-key "\C-u" 'kill-whole-line)
-(global-set-key "\C-t" 'kill-line)
+(global-set-key "\C-b" 'recenter)
 
 
 ;; (makunbound 'overriding-minor-mode-map)
