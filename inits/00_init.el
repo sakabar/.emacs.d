@@ -151,9 +151,10 @@
 ;; http://qiita.com/catatsuy/items/f9fad90fa1352a4d3161
 ;; 起動画面で recentf を開く
 ;; …ではなく、特定のファイルを開く
-(add-hook 'after-init-hook
-  (lambda()
-    (find-file "~/Dropbox/Plaintext/README.txt")))
+;; 2016/01/14 必要性が少なくなったのでコメントアウト
+;; (add-hook 'after-init-hook
+;;   (lambda()
+;;     (find-file "~/Dropbox/Plaintext/README.txt")))
 
 
 ;; emacsを終了するときに確認する
