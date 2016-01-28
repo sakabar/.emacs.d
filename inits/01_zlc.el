@@ -1,6 +1,6 @@
 (require 'zlc)
 (zlc-mode 1)
-(Setq zlc-select-completion-immediately t)
+(setq zlc-select-completion-immediately t)
 
 (let ((map minibuffer-local-map))
   ;;; like menu select
