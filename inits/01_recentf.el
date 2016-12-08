@@ -1,6 +1,6 @@
 ;アイドルタイマーが大事らしい
 (when (require 'recentf nil t)
-  (setq recentf-max-saved-items 200)
+  (setq recentf-max-saved-items 100)
   (setq recentf-exclude '(".recentf"))
   (setq recentf-auto-cleanup 10)
  ;; (setq recentf-exclude '(".*recentf" ".*howm.*" ".*anything.*"  ".*.aux" ".*/etc/.* " ".*session.*"))
