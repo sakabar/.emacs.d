@@ -5,7 +5,7 @@
  ;; 英語
  (set-face-attribute 'default nil
              :family "Menlo" ;; font
-             :height 120)    ;; font size
+             :height 180)    ;; font size
 
 ;; 日本語
 (set-fontset-font
