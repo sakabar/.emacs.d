@@ -6,10 +6,19 @@
 
 (setq scroll-step 1)
 
-(set-cursor-color 'green)
-(blink-cursor-mode 1)
-(setq blink-cursor-interval 0.0)
-(setq blink-cursor-delay 0.0)
+;; http://qiita.com/akisute3@github/items/f5ccc2b027a9aaa13fe4
+;; これで、クリップボードとEmacsのキルヤンクが共有される
+;; 今まではCommand-VでEmacsにペーストしていたが、これからはC-yとなる
+;; これは、設定で変えられるかもしれない
+(setq x-select-enable-clipboard t)
+
+
+; エラーが出てしまう。
+(set-cursor-color "#00FF00")
+
+(blink-cursor-mode 0)
+;; (setq blink-cursor-interval 0.0)
+;; (setq blink-cursor-delay 0.0)
 
 (setq default-mode-line-format
  '(
