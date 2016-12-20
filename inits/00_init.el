@@ -13,7 +13,6 @@
 (setq x-select-enable-clipboard t)
 
 
-; エラーが出てしまう。
 (set-cursor-color "#00FF00")
 
 (blink-cursor-mode 0)
