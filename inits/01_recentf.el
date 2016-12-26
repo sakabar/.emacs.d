@@ -4,7 +4,7 @@
   (setq recentf-exclude '(".recentf"))
   (setq recentf-auto-cleanup 10)
  ;; (setq recentf-exclude '(".*recentf" ".*howm.*" ".*anything.*"  ".*.aux" ".*/etc/.* " ".*session.*"))
-(setq recentf-exclude '(".*linuxHome*."))
+(setq recentf-exclude '(".*linuxHome*." "my_m_thesis"))
   (setq recentf-auto-save-timer
         (run-with-idle-timer 60 t 'recentf-save-list))
   (recentf-mode 1))
