@@ -23,4 +23,7 @@
 ;; (defun my-insert-slashes ()
 ;; (insert "\\"))
 
+;; set YaTeX coding system
+(setq YaTeX-kanji-code nil)
+
 ;;End of Yatex-mode

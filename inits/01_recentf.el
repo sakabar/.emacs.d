@@ -1,9 +1,10 @@
 ;アイドルタイマーが大事らしい
 (when (require 'recentf nil t)
-  (setq recentf-max-saved-items 200)
+  (setq recentf-max-saved-items 100)
   (setq recentf-exclude '(".recentf"))
   (setq recentf-auto-cleanup 10)
- ;(setq recentf-exclude '(".*recentf" ".*howm.*" ".*anything.*"  ".*.aux" ".*/etc/.* " ".*session.*"))
+ ;; (setq recentf-exclude '(".*recentf" ".*howm.*" ".*anything.*"  ".*.aux" ".*/etc/.* " ".*session.*"))
+(setq recentf-exclude '(".*linuxHome*." "my_m_thesis"))
   (setq recentf-auto-save-timer
         (run-with-idle-timer 60 t 'recentf-save-list))
   (recentf-mode 1))

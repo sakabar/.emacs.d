@@ -6,10 +6,18 @@
 
 (setq scroll-step 1)
 
-(set-cursor-color 'green)
-(blink-cursor-mode 1)
-(setq blink-cursor-interval 0.0)
-(setq blink-cursor-delay 0.0)
+;; http://qiita.com/akisute3@github/items/f5ccc2b027a9aaa13fe4
+;; これで、クリップボードとEmacsのキルヤンクが共有される
+;; 今まではCommand-VでEmacsにペーストしていたが、これからはC-yとなる
+;; これは、設定で変えられるかもしれない
+(setq x-select-enable-clipboard t)
+
+
+(set-cursor-color "#00FF00")
+
+(blink-cursor-mode 0)
+;; (setq blink-cursor-interval 0.0)
+;; (setq blink-cursor-delay 0.0)
 
 (setq default-mode-line-format
  '(
@@ -151,7 +159,11 @@
 ;; http://qiita.com/catatsuy/items/f9fad90fa1352a4d3161
 ;; 起動画面で recentf を開く
 ;; …ではなく、特定のファイルを開く
-(add-hook 'after-init-hook
-  (lambda()
-    (find-file "~/Dropbox/Plaintext/README.txt")))
+;; 2016/01/14 必要性が少なくなったのでコメントアウト
+;; (add-hook 'after-init-hook
+;;   (lambda()
+;;     (find-file "~/Dropbox/Plaintext/README.txt")))
 
+
+;; emacsを終了するときに確認する
+(setq confirm-kill-emacs 'y-or-n-p)
