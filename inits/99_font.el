@@ -20,7 +20,7 @@
 
 
 
-;;行番号の表示
+;;行の左側に行番号を表示
 (global-linum-mode t)
 (menu-bar-mode 1)
 (tool-bar-mode 0)

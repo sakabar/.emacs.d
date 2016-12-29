@@ -74,12 +74,12 @@
 ;カッコ
 (show-paren-mode t)
 
-
-(scroll-bar-mode nil)
-
-
 ;;anti GUI
 (tool-bar-mode 0)
+;; 右のスクロールバーを非表示
+(scroll-bar-mode 0)
+
+
 ;;行番号表示
 (setq line-number-mode t)
 ;;列番号表示
@@ -103,9 +103,8 @@
 (defun my-open-line ()
   (interactive)
   (move-end-of-line 1)
-  ;; (move-beginning-of-line 1)
   (open-line 1)
-  (next-line) ;論理行ではなく視覚的行で移動してしまうらしい。
+  (next-line) ;next-lineは論理行ではなく視覚的行で移動してしまうらしい。
 )
 
 (global-set-key "\C-o" 'my-open-line)
