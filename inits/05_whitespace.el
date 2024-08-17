@@ -20,10 +20,23 @@
 
 ;; スペースは全角のみを可視化
 (setq whitespace-space-regexp "\\(\u3000+\\)")
+;; https://qiita.com/UFO/items/4656d0740a67cca289db
 
 ;; 保存前に自動でクリーンアップ
-(setq whitespace-action '(auto-cleanup))
+(defvar delete-trailing-whitespece-before-save t)
+(defun my-delete-trailing-whitespace ()
+  (if delete-trailing-whitespece-before-save
+      (delete-trailing-whitespace)))
+(add-hook 'before-save-hook 'my-delete-trailing-whitespace)
+
+; 無効にしたいモードのhook
+(add-hook 'markdown-mode-hook
+          '(lambda ()
+             (set (make-local-variable 'delete-trailing-whitespece-before-save) nil)))
+;; (setq whitespace-action '(auto-cleanup))
+;; (setq whitespace-action nil)
 (global-whitespace-mode 1)
+
 
 (defvar my/bg-color "#232323")
 (set-face-attribute 'whitespace-trailing nil

@@ -2,7 +2,7 @@
 ;; http://tcnksm.sakura.ne.jp/blog/2012/04/02/emacs/
 ;; Mac OS XをMavericksにしたらフォントが変になる。
 
- ;; 英語
+;; 英語
  (set-face-attribute 'default nil
              :family "Menlo" ;; font
              :height 180)    ;; font size

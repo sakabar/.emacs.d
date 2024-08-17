@@ -165,4 +165,12 @@
 
 
 ;; emacsを終了するときに確認する
-(setq confirm-kill-emacs 'y-or-n-p)
+;; (setq confirm-kill-emacs 'y-or-n-p)
+(setq confirm-kill-emacs 'nil)
+
+;; https://keens.github.io/blog/2013/10/04/emacs-dired/
+(ffap-bindings)
+
+;; https://misohena.jp/blog/2016-03-01-dired-details-s-and-r.html
+(require 'dired-details-r)
+(dired-details-r-setup)
